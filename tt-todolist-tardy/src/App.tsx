@@ -4,12 +4,10 @@ import TaskList from './TaskList';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
+      <h1>
           Test Valeco
-          <TaskList />
-        </p>
-      </header>
+      </h1>
+      <TaskList />
     </div>
   );
 }

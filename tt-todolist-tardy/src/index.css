@@ -1,0 +1,60 @@
+:root {
+    background: #151515;
+    --box-background:#c6e3ba;
+    --white50:rgba(255,255,255,.5);
+    --white90:rgba(255,255,255,.9);
+    --main-color:#78a825;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+html{
+	font-size:62.5%; /*62.5*/
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',monospace;
+}
+
+ul, li{margin:0; padding:0;	list-style: none;}
+
+.App{
+    background-color: var(--box-background);
+    max-width: 80em;
+    margin:2em auto;
+    padding: 2em;
+    border-radius: 1em;
+}
+@media screen and (max-width: 850px) {
+    .App {
+        margin:2em;
+    }
+}
+.App *{transition: all .5s;}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin:0px;
+    font-size: 3em;
+    border-radius: .2em;
+    padding:1em;
+    background-color: var(--main-color);
+}
+.App li{
+    display: flex;
+    background-color: var(--white50);
+    border-radius: .5em;
+    margin:1em 0em;
+    padding:1em;
+    font-size:1.5em;
+}
+.App li:hover{
+    background-color: var(--white90);
+}
+.App input[type="checkbox"]{
+    margin-right: 1em;
+}
