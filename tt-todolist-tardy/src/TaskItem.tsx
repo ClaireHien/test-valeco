@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 interface Task {
     title: string;
@@ -10,12 +10,19 @@ interface TaskItemProps {
 }
   
 const TaskItem: React.FC<TaskItemProps> = ({ task }) => {
-    
+        
+    const [checked, setChecked] = useState(task.completed);
+
+    const handleCheckboxChange = () => {
+        setChecked(!checked);
+    };
+
     return (
         <li>
             <input
                 type="checkbox"
-                checked={task.completed}
+                checked={checked}
+                onChange={handleCheckboxChange}
             />
             <span>{task.title}</span>
         </li>
