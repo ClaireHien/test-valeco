@@ -1,4 +1,5 @@
 import React from 'react';
+import TaskList from './TaskList';
 
 function App() {
   return (
@@ -6,6 +7,7 @@ function App() {
       <header className="App-header">
         <p>
           Test Valeco
+          <TaskList />
         </p>
       </header>
     </div>
